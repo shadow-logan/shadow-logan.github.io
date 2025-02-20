@@ -6,6 +6,9 @@ import netlify from "@astrojs/netlify/functions";
 export default defineConfig({
   site: "https://shadow-logan.github.io",
   base: "/",
-  output: "server",
-  adapter: netlify()
+  output: 'static',
+  adapter: netlify(),
+  build: {
+    format: 'directory'
+  }
 });

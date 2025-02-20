@@ -6,15 +6,21 @@ import Brief from '../components/Brief.astro'
 import Pricing from '../components/Pricing.astro';
 import Customers from '../components/Customers.astro'
 import Footer from '../components/Footer.astro';
+
+// 添加一些元数据
+const title = "Logan | Micro SaaS landing page";
+const description = "Your SaaS solution description";
 ---
 
-<Layout title="Idol | Micro SaaS landing page">
-	<Header />
-	<Hero />
-	<Brief />
-	<Pricing />
-	<Customers />
-	<Footer />
+<Layout title={title}>
+	<main>
+		<Header />
+		<Hero />
+		<Brief />
+		<Pricing />
+		<Customers />
+		<Footer />
+	</main>
 </Layout>
 
 <style>
